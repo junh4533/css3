@@ -17,4 +17,20 @@
 	content: "";
 	top: 15px;
 	left: -25px;
+	background: linear gradient(bottom right,black,white);
+}
+.circle {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px; 
+	background-repeat: no-repeat;
+	background-position: center;
+	/* width and height can be anything, as long as they're equal */
+}
+
+.circle:hover{
+ background-image:url(ninja-silhouette-image-2.png);
+}
+body{
+background-color:gray;
 }
