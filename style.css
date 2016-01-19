@@ -23,12 +23,21 @@ body {
 	height: 300px; 
 	background-repeat: no-repeat;
 	background-position: center;
+	position: Fixed;
+	background-image:url(ninja-silhouette-image-2.png);
+	animation-name: ninjaMove;
+	animation-duration:4s;
+	bottom:0px;
+	animation-iteration-count: infinite;
 }
 
-.circle:hover{
- background-image:url(ninja-silhouette-image-2.png);
+@keyframes ninjaMove{
+ 0% {left:0px; top:255px;}
+ 25% {left:400px; top:255px;}
+ 50% {right:400px; top:0px;}
+ 75% {left:400px;  top:255px;}
+ 100%{left:0px; top:255px;}
 }
-
 
 @keyframes star {
 to {
