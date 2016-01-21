@@ -10,12 +10,11 @@ h1{
 	color:White;
 	text-align:center;
 	text-shadow:10px 10px 5px black;
-	transition:font-size 0.1s;
+	transition:font-size 0.1s,visibility 0.1s;
 	font-size:150%;
 }
 h1:hover{
 	font-size:250%;
-
 }
 #star {
 	width: 170px;
@@ -26,7 +25,6 @@ h1:hover{
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
 }
-
 .circle {
 	border-radius: 50%;
 	width: 300px;
