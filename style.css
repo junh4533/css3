@@ -5,7 +5,18 @@ html {
 body {
 	background: linear-gradient(to bottom right, black, white);
 }
+h1{
+	font-family:fantasy;
+	color:White;
+	text-align:center;
+	text-shadow:10px 10px 5px black;
+	transition:font-size 0.1s;
+	font-size:150%;
+}
+h1:hover{
+	font-size:250%;
 
+}
 #star {
 	width: 170px;
 	height: 170px;
@@ -42,6 +53,7 @@ body {
 }
 
 .ninja:hover {
+
 	/*z-index: -1; Que?*/
 	background-image: url(ninja-silhouette-image-2.png);
 }
@@ -62,6 +74,7 @@ body {
 	100% {
 		top: 80%;
 	}
+
 }
 
 @keyframes star {
