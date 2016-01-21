@@ -44,7 +44,30 @@ h1:hover{
 	background-repeat: no-repeat;
 	background-position: center;
 }
+.katana{
+	width:400px;
+	height:300px;
+	background-position:center;
+	background-image: url(Ninto.png);
+	margin-left:55%;
+	animation-name:Thekatana;
+	animation-duration:0.5s;
+	animation-iteration-count:infinite;
+	transform:rotate(20deg);
+	
+}
 
+.ninja2{
+	width:200px;
+	height:200px;
+	background-image: url(ninja-silhouette-image-2.png);
+	margin-left:89%;
+	animation-name:disninja;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	opacity:0;
+	background-repeat: no-repeat;
+}
 .circle:hover {
 	/*z-index: 0; Que?*/
 	background: linear-gradient(to bottom right, black, yellow);
@@ -79,5 +102,15 @@ h1:hover{
 	to {
 		margin-left: 100%;
 		transform: rotate(720deg);
+	}
+}
+
+@keyframes Thekatana{
+	to{transform:rotate(-90deg);
+	}
+}
+
+@keyframes disninja{
+	to{opacity:100;
 	}
 }
