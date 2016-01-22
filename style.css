@@ -17,11 +17,9 @@ h1 {
 	transition: font-size 0.1s;
 	/*staring font size */
 	font-size: 150%;
-}
-
-h1:hover {
-	/* Doubles the font size upon hover*/
-	font-size: 250%;
+	animation-name: text;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 }
 
 #star {
@@ -66,7 +64,6 @@ h1:hover {
 	animation-name: Thekatana;
 	animation-duration: 0.5s;
 	animation-iteration-count: infinite;
-	transform: rotate(20deg);
 }
 
 
@@ -76,10 +73,12 @@ h1:hover {
 	width: 200px;
 	height: 200px;
 	background-image: url(ninja-silhouette-image-2.png);
-	margin-left: 89%;
+	/*The second ninja is 90% away from the left margin, relative to its parent container*/
+	margin-left: 90%;
 	animation-name: disninja;
-	animation-duration: 2s;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
+	/*Makes the second ninja invisible*/
 	opacity: 0;
 	background-repeat: no-repeat;
 }
@@ -118,6 +117,9 @@ h1:hover {
 	}
 }
 
+
+/*The star will spin to the right over the course of the animation*/
+
 @keyframes star {
 	to {
 		/*makes the ninja star move to the right(100% away from the left margin)*/
@@ -133,8 +135,41 @@ h1:hover {
 	}
 }
 
+
+/*The ninja will fide in and out over the course of the animation*/
+
 @keyframes disninja {
-	to {
-		opacity: 100;
+	0% {
+		opacity: 0;
+	}
+	95% {
+		opacity: 0;
+	}
+	/*From 90-95% of the animation, the ninja will be insivisible. 
+	In the last 5% of the animation, the ninja will appear*/
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/*The h1 will change its size over the course of the animation*/
+
+@keyframes text {
+	0% {
+		font-size: 250%;
+	}
+	/*When the animation is 25% complete, the h1 will decrease from 250% to 150%*/
+	25% {
+		font-size: 150%;
+	}
+	50% {
+		font-size: 250%;
+	}
+	75% {
+		font-size: 150%;
+	}
+	100% {
+		font-size: 250%;
 	}
 }
